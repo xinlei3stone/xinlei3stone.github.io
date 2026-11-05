@@ -9,7 +9,7 @@ Durable context for the personal-web workspace. Short, factual, dated entries �
 - 旧站归档：`legacy/static-2026/`（2026-10 纯静态站）、`legacy/legacy-vite-*`、`legacy/photo.png`。旧简历 `legacy/杨欣磊-简历-2026-10.pdf` 仅本地保留（`legacy/*.pdf` 已 gitignore，不随仓库公开）；内容仍写技培生/AI 方向，更新前不要提供下载。
 - 部署工作流 `.github/workflows/deploy-pages.yml` 已改为 Node 22 上 `npm ci` + `npm run build`，发布 `out/`。GitHub 账号/仓库更名为 `xinlei3stone/xinlei3stone.github.io`，remote 已更新，线上地址改为 https://xinlei3stone.github.io/。
 - 模板作者的个人内容已清理：访客地图、点赞、`jialeliu` 字体镜像、示例头像/视频/论文/简历、BibTeX/Publications 死代码与依赖。`npm audit` 剩余 postcss 告警嵌套在 Next 15.5.29 内，修复需升 Next 16（暂不升级，静态站构建期问题）。
-- 截至本条目，改动只在本地完成并通过 build + 桌面/移动端/深色模式预览，**尚未 commit / push**，线上仍是旧站。
+- 已提交 `104b00d` 并推送到 `xinlei3stone/xinlei3stone.github.io` 的 `main`；Actions run `42030546077` 构建 1m19s、部署 9s，成功。线上 https://xinlei3stone.github.io/ 已验证 `/`、`/projects/`、`/experience/`、`/cv/` 均 200，控制台无报错。
 
 ## 2026-10-20
 
