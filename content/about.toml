@@ -1,0 +1,28 @@
+type = "about"
+title = "About"
+
+[profile]
+research_interests = [
+  "Yield enhancement & defect analysis",
+  "Semiconductor process & integration",
+  "Electrochemistry & materials",
+  "Data tools for engineering",
+]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "About"
+
+[[sections]]
+id = "skills"
+type = "markdown"
+source = "skills.md"
+title = "Skills & Tools"
+
+[[sections]]
+id = "news"
+type = "list"
+title = "News"
+source = "news.toml"

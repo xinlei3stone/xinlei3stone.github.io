@@ -1,0 +1,55 @@
+type = "card"
+title = "Projects"
+description = "Selected work from my master's research, tools I built for my own workflow, and one data/AI project in progress."
+
+[[items]]
+title = "EchemPro — Electrochemistry Data Workbench"
+subtitle = "Engineering tool · designed and built for my own research"
+date = "2025–26"
+content = '''
+Electrochemical experiments generate instrument files — Bio-Logic .mpr/.mpt, EIS spectra, chrono data — and repeating the same cleaning and plotting by hand was eating research time.
+
+**Role.** Designed and built a Python desktop application for parsing, cleaning, analyzing, and plotting EC data, packaged with PyInstaller as a standalone macOS app.
+
+**Outcome.** Now my daily driver for thesis data. Batch EIS/DRT processing is roughly 5× faster than the old manual workflow, and every plot is reproducible.
+'''
+tags = ["Python", "pandas", "PyInstaller", "EIS/DRT"]
+
+[[items]]
+title = "RuNi–M Ternary Alloys — The Third-Element Effect"
+subtitle = "M.S. research · independent project"
+date = "2024–26"
+content = '''
+Ru-based alkaline HER catalysts do not hold still: their surfaces reconstruct under operating conditions, and the third element changes both activity and stability in ways a room-temperature measurement cannot explain.
+
+**Role.** Independent project covering alloy synthesis (electrodeposition and electroless routes), the full electrochemical test set (LSV/CV/EIS/Tafel), operando Raman/XAFS, and the Python analysis pipeline behind the data.
+
+**Outcome.** Identified composition–activity patterns in RuNi-based ternary alloys and traced them to the third-element effect. First-author manuscript in preparation.
+'''
+tags = ["Alkaline HER", "Ternary alloys", "Operando Raman/XAFS", "Electrodeposition"]
+
+[[items]]
+title = "Active-Element Sequencing — From Beaker to 1.8 m Electrode"
+subtitle = "Ministry of Education project · core member"
+date = "2024–29"
+content = '''
+Activity without stability does not ship. This project designs active-element sequences and heterostructures for alkaline water electrolysis, then tests whether the same chemistry survives scale-up and reverse-current events.
+
+**Role.** Wet-chemical process design (electrodeposition, electroless plating), optimization of temperature, concentration, and pH, 1.8 m × 1.8 m electrode scale-up, SEM/TEM/XRD/XPS/Raman characterization, and accelerated durability testing.
+
+**Outcome.** A NiFeMo cathode reached 1.92 V at 1 A cm⁻²; the best sample improved 67% over the baseline electrode. A 3,000-cycle AAD test showed a decay rate of 4.1 mV/h. The work also supported industry collaboration with Guangzhou Qinglv Hydrogen, CHINT, and Baowu Clean Energy. Co-author on a Nature Communications submission.
+'''
+tags = ["Scale-up", "Heterojunction", "Durability", "Industry collaboration"]
+
+[[items]]
+title = "Electrochemistry Data QA Assistant"
+subtitle = "Personal project · in progress"
+date = "2026"
+content = '''
+**Goal.** Ask questions in natural language over my own thesis data and get answers that cite the underlying records — not a plausible-sounding guess.
+
+**Plan.** Local Qwen via Ollama, pgvector retrieval over experiment notes and instrument outputs, and NL2SQL over structured process data. The same pattern as retrieval over SOP, case, and defect records in a fab.
+
+**Status.** Architecture defined; build starts after the statistics, SQL, and RAG fundamentals are in place.
+'''
+tags = ["RAG", "pgvector", "Local LLM", "NL2SQL", "In progress"]

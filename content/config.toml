@@ -1,0 +1,52 @@
+[site]
+title = "Xinlei Yang"
+description = "Personal site of Xinlei Yang — incoming Yield Enhancement Engineer at SMIC South, materials researcher, and builder of data tools for engineering."
+favicon = "/favicon.svg"
+last_updated = "November 5, 2026"
+
+[author]
+name = "Xinlei Yang"
+title = "Incoming Yield Enhancement Engineer"
+institution = "SMIC South · Shanghai"
+avatar = "/avatar.png"
+
+[social]
+# Contact information (leave blank or delete to hide)
+email = "xinlei2001@foxmail.com"
+location = "Shanghai, China"
+location_details = [
+  "SMIC South (中芯南方)",
+  "Shanghai, China",
+]
+github = "https://github.com/xinlei3stone"
+
+[features]
+# Show a like button on the about page
+enable_likes = false
+
+# Display all subpages on a single page
+enable_one_page_mode = false
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Projects"
+type = "page"
+target = "projects"
+href = "/projects"
+
+[[navigation]]
+title = "Experience"
+type = "page"
+target = "experience"
+href = "/experience"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"
