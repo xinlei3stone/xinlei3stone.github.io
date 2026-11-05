@@ -87,7 +87,7 @@ export default function Profile({ author, social, researchInterests }: ProfilePr
                     alt={author.name}
                     width={256}
                     height={256}
-                    className="w-full h-full object-cover object-[50%_22%]"
+                    className="w-full h-full object-cover object-center"
                     priority
                 />
             </div>
